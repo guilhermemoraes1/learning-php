@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #15142b;
+    --cor1: #372991;
+    --cor2: #291f6c;
+    --cor3: #ccc;
+    --cor4: #4CAF50;
+    --cor5: #45a049;
+    --cor6: #eb9903;
+    --cor7: #c27013;
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
@@ -8,13 +19,12 @@
 /* ELEMENTOS DA INTERFACE */
 
 body {
-    background-color: #15142b;
-    background-image: linear-gradient(180deg, #372991, #15142b);
+    background-color: var(--cor0);
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor0));
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -42,7 +52,7 @@ main, section, article {
 footer {
     display: block;
     width: 100vw;
-    background-color: #291f6c;
+    background-color: var(--cor2);
     color: white;
     text-align: center;
     margin-top: auto;
@@ -55,22 +65,22 @@ p {
 }
 
 h2, h3, h4 {
-    color: #372991;
+    color: var(--cor1);
     margin: 0 0 10px 0;
 }
 
 a {
-    color: #15142b;
+    color: var(--cor0);
     background-color: rgba(55, 41, 145, 0.1);
     padding: 0 3px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: .5px dotted #372991;
+    border-bottom: .5px dotted var(--cor1);
 }
 
 a:hover {
-    color: #372991;
-    border-bottom: 1px solid #372991;
+    color: var(--cor1);
+    border-bottom: 1px solid var(--cor1);
 }
 
 /* TABELAS E LISTAS */
@@ -78,12 +88,12 @@ a:hover {
 table {
     min-width: 400px;
     border-spacing: 0px;
-    border: 0.5px solid #372991;
+    border: 0.5px solid var(--cor1);
     margin: 10px auto;
 }
 
 table th {
-    background-color: #372991;
+    background-color: var(--cor1);
     color: white;
     padding: 5px;
     text-align: left;
@@ -126,7 +136,7 @@ table.divisao tr:nth-child(2) td:nth-child(1) {
 }
 
 ul > li::marker {
-    color: #372991;
+    color: var(--cor1);
 }
 
 /* ELEMENTOS DE FORMULÁRIO */
@@ -155,7 +165,7 @@ input[type=text], [type=number], select, input[type=date], input[type=date], inp
     font-size: 1em;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor3);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -166,14 +176,14 @@ input[type=range] {
     font-size: 1em;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor3);
     border-radius: 4px;
     box-sizing: border-box;
 }
   
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: var(--cor4);
     font-size: 1em;
     color: white;
     padding: 10px 20px;
@@ -184,12 +194,12 @@ input[type=submit] {
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--cor5);
 }
 
 input[type=reset] {
     width: 100%;
-    background-color: #eb9903;
+    background-color: var(--cor6);
     font-size: 1em;
     color: white;
     padding: 10px 20px;
@@ -200,12 +210,12 @@ input[type=reset] {
 }
 
 input[type=reset]:hover {
-    background-color: #c27013;
+    background-color: var(--cor7);
 }
 
 input[type=button], button {
     width: 100%;
-    background-color: #372991;
+    background-color: var(--cor1);
     font-size: 1em;
     color: white;
     padding: 10px 20px;
@@ -216,11 +226,11 @@ input[type=button], button {
 }
 
 input[type=button]:hover, button:hover {
-    background-color: #291f6c;
+    background-color: var(--cor2);
 }
 
 fieldset {
-    border: 0.5px dotted #372991;
+    border: 0.5px dotted var(--cor1);
 }
 
 fieldset > legend {
